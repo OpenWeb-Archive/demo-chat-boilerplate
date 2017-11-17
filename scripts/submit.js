@@ -1,3 +1,7 @@
 const shell = require('shelljs');
 
-shell.exec('git archive HEAD | gzip > submission.tar.gz');
+// Windows users, please install gow for tar/gzip support
+// https://github.com/bmatzelle/gow
+
+shell.exec('tar -zcf submission.tar.gz .git');
+
