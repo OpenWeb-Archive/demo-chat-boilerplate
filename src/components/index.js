@@ -1,5 +1,6 @@
 
-//Your app starts here, you may change anything
+//This is your top level React component, you may change everything
+
 import React from 'react'
 import logo from '../assets/spotim-logo.jpg'
 import {Container, Image} from 'semantic-ui-react'
