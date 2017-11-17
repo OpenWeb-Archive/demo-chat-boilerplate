@@ -12,7 +12,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 //connecting to Socket.IO chat server
 const socket = io("https://spotim-demo-chat-server.herokuapp.com");
-// const socket = io("http://localhost:3300");
 socket.on("connect", function() {
   console.log("connected to chat server!");
 });
