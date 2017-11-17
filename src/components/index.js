@@ -1,3 +1,5 @@
+
+//Your app starts here, you may change anything
 import React from 'react'
 import logo from '../assets/spotim-logo.jpg'
 import {Container, Image} from 'semantic-ui-react'
@@ -11,6 +13,7 @@ const Logo = styled.div`
       }
       
 `;
+
 
 class App extends React.PureComponent {
   render() {
