@@ -2,6 +2,8 @@ Resources
 SocketIO Endpoint: 
 https://spotim-demo-chat-server.herokuapp.com
 
+channel: 'spotim/chat'
+
 Images
 https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png
 https://spotim-demo-chat-server.herokuapp.com/avatars/002-psyduck.png
