@@ -30,8 +30,7 @@ class App extends React.PureComponent {
   };
 
   inputHandle = e => {
-    // const username = e.target.value.trim();
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value.trim() });
   };
 
   setUser = () => {
@@ -47,7 +46,6 @@ class App extends React.PureComponent {
   };
 
   render() {
-    console.log(this.props.socket);
     return (
       <React.Fragment>
         <Container className={"spotim-header"}>

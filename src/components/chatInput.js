@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Input, T } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 
 class ChatInput extends Component {
   state = {
@@ -28,13 +28,6 @@ class ChatInput extends Component {
   // };
 
   handleKey = e => {
-    // console.log("HANLDE KEY", e);
-    // if (this.props.message) {
-    //   this.setState({
-    //     usermessage: this.props.username
-    //   });
-    // }
-
     if (e.key === "Enter") {
       if (e.target.checkValidity() === true) {
         this.handleSubmit(e);
@@ -43,7 +36,6 @@ class ChatInput extends Component {
   };
 
   handleSubmit = e => {
-    // console.log("user", this.props.username);
     e.preventDefault();
     e.target.className += " was-validated";
     if (e.target.checkValidity() === true) {
@@ -58,14 +50,13 @@ class ChatInput extends Component {
         return strTime;
       }
 
-      console.log(formatAMPM(new Date()));
       const message = {
         text: this.state.text,
         user: this.props.username,
         avatar: this.props.avatar,
         time: formatAMPM(new Date())
       };
-      console.log("MESSAGE", message);
+      // console.log("MESSAGE", message);
       if (this.state.text) {
         this.props.sendMessage(message);
         this.setState({ text: "" });
@@ -74,7 +65,7 @@ class ChatInput extends Component {
   };
 
   render() {
-    console.log("PROPS", this.props);
+    // console.log("PROPS", this.props);
     return (
       <div className={"gavin"}>
         <form className="needs-validation" onSubmit={e => this.handleSubmit(e)}>
@@ -91,12 +82,11 @@ class ChatInput extends Component {
           />
 
           <Button color="blue">Send</Button>
-          {this.state.text !== "" &&
-            this.props.socketID !== this.props.socketID && (
-              <span className="typing">
-                This {`${this.state.usermessage}`} is typing...
-              </span>
-            )}
+          {this.state.text !== "" && this.props.socketID && (
+            <span className="typing">
+              This {`${this.state.usermessage}`} is typing...
+            </span>
+          )}
         </form>
         <div className="invalid-feedback" />
       </div>
