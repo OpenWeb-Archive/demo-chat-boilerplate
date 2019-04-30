@@ -3,29 +3,14 @@ import { Button } from "semantic-ui-react";
 
 class ChatInput extends Component {
   state = {
-    text: "",
-    usermessage: ""
+    text: ""
   };
 
   handleText = (e, obj) => {
     this.setState({
       text: e.target.value
     });
-
-    if (this.props.message) {
-      this.setState({
-        usermessage: obj
-      });
-    }
   };
-
-  // if (this.state.text !== "") {
-  //   this.typing();
-  // }
-
-  // typing = () => {
-  //   return;
-  // };
 
   handleKey = e => {
     if (e.key === "Enter") {
@@ -44,7 +29,7 @@ class ChatInput extends Component {
         var minutes = date.getMinutes();
         var ampm = hours >= 12 ? "pm" : "am";
         hours = hours % 12;
-        hours = hours ? hours : 12; // the hour '0' should be '12'
+        hours = hours ? hours : 12;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         var strTime = hours + ":" + minutes + " " + ampm;
         return strTime;
@@ -56,7 +41,6 @@ class ChatInput extends Component {
         avatar: this.props.avatar,
         time: formatAMPM(new Date())
       };
-      // console.log("MESSAGE", message);
       if (this.state.text) {
         this.props.sendMessage(message);
         this.setState({ text: "" });
@@ -65,9 +49,8 @@ class ChatInput extends Component {
   };
 
   render() {
-    // console.log("PROPS", this.props);
     return (
-      <div className={"gavin"}>
+      <div className={"formPad"}>
         <form className="needs-validation" onSubmit={e => this.handleSubmit(e)}>
           <textarea
             type="text"
@@ -82,11 +65,6 @@ class ChatInput extends Component {
           />
 
           <Button color="blue">Send</Button>
-          {this.state.text !== "" && this.props.socketID && (
-            <span className="typing">
-              This {`${this.state.usermessage}`} is typing...
-            </span>
-          )}
         </form>
         <div className="invalid-feedback" />
       </div>
@@ -94,3 +72,12 @@ class ChatInput extends Component {
   }
 }
 export default ChatInput;
+
+// {this.state.text !== "" &&
+//   this.props.socketID &&
+//   this.message.user && (
+//     <span className="typing">
+//       This {`${this.message.user}`} is typing...
+//     </span>
+//   )}
+///broadcast to other users on who's typing onkeydown

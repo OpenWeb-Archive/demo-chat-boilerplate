@@ -50,6 +50,7 @@ body {
   .messagepad {
     padding-left: 10px;
     font-size: 20px;
+    word-wrap: break-word;
   }
 
   .typing {
@@ -58,7 +59,7 @@ body {
     padding-left: 300px;
   }
 
-  .gavin {
+  .formPad {
     padding-top: 15px;
   }
 

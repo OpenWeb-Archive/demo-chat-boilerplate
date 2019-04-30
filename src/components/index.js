@@ -46,6 +46,7 @@ class App extends React.PureComponent {
   };
 
   render() {
+    // console.log("SOCKET", this.props.socket.emit);
     return (
       <React.Fragment>
         <Container className={"spotim-header"}>

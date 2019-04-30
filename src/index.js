@@ -13,6 +13,8 @@ socket.on("disconnect", function() {
   console.log("disconnected from chat server!");
 });
 
+// socket.on("")
+
 function subscribeToChat(callback) {
   socket.on("spotim/chat", data => callback(data));
 }

@@ -13,7 +13,6 @@ const Messages = props => {
       "https://pbs.twimg.com/profile_images/1002272769352978433/9S4QWSR0.jpg";
   }
 
-  console.log("AVATAR", props.message);
   return (
     <div className={"outputText"}>
       <img src={avatar} alt="avatar" />
@@ -22,8 +21,5 @@ const Messages = props => {
     </div>
   );
 };
-Messages.defaultProps = {
-  avatar:
-    "https://pbs.twimg.com/profile_images/1002272769352978433/9S4QWSR0.jpg"
-};
+
 export default Messages;
