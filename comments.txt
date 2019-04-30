@@ -1,6 +1,10 @@
 Add your general design and decision comments here:
 
+On the App component, User must enter a username or else the children components will not render. A user may enter a image url, else a default avatar is provided.
 
+Chat window replaces the input component, a user can send messages. Each message sent displays in the chat window with username, avatar, message text as well as the time the message was sent.
+
+ In the user's window, the usernames will be marked a different color depending on the sender. A message sent by the user is marked in blue, while other messages not sent by the user will be marked in green.
 
 
 
@@ -8,5 +12,9 @@ Add your general design and decision comments here:
 Feedback regarding this exam is always welcomed.
 What did you like? What didn't you like? What was missing?
 
-//Installed some dependicies
-// created a server
+I genuinely enjoyed this code challenge,  I found it to be fair in terms of difficulty level and extremely practical way to gauge one’s technical ability. It provided enough freedom to choose the framework of choice and tackle the specs as one sees fit.
+I haven’t used web sockets before so there was a small learning curve, but it made me more excited to learn this new technology. 
+
+I opted to use the boilerplate repo provided, though slightly outdated but that wasn’t a huge problem.
+
+One issue I did come across is when another person would use the server spot.io server at the same time I was testing out my application. Led to some unexpected breaks in my app, but was a great learning opportunity to learn and build out a server for socket.io.

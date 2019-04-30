@@ -10,7 +10,7 @@ const Messages = props => {
   let avatar = props.message.avatar;
   if (avatar === "") {
     avatar =
-      "https://pbs.twimg.com/profile_images/1002272769352978433/9S4QWSR0.jpg";
+      "https://spotim-demo-chat-server.herokuapp.com/avatars/002-psyduck.png";
   }
 
   return (
