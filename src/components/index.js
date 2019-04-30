@@ -33,6 +33,7 @@ class App extends React.PureComponent {
     this.setState({ [e.target.name]: e.target.value.trim() });
   };
 
+  // Some checks in place to prevent falsey values
   setUser = () => {
     if (this.state.username) {
       this.setState({ loggedIn: true });
@@ -46,7 +47,6 @@ class App extends React.PureComponent {
   };
 
   render() {
-    // console.log("SOCKET", this.props.socket.emit);
     return (
       <React.Fragment>
         <Container className={"spotim-header"}>
@@ -57,6 +57,7 @@ class App extends React.PureComponent {
             </Logo>
           </div>
         </Container>
+        {/*Render ChatContainer after a user enters a username*/}
         <Container>
           {this.state.loggedIn && this.state.username ? (
             <ChatContainer

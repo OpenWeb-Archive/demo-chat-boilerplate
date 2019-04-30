@@ -20,4 +20,4 @@ I haven’t used web sockets before so there was a small learning curve, but it 
 
 I opted to use the boilerplate repo provided, though slightly outdated but that wasn’t a huge problem.
 
-One issue I did come across is when another person would use the server spot.io server at the same time I was testing out my application. Led to some unexpected breaks in my app, but was a great learning opportunity to learn and build out a server for socket.io.
+One issue I did come across is when another person would use the server Spot.IM server at the same time I was testing out my application. Led to some unexpected breaks in my app, but was a great learning opportunity to learn and build out a server for socket.io.

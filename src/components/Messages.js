@@ -12,7 +12,7 @@ const Messages = props => {
     avatar =
       "https://spotim-demo-chat-server.herokuapp.com/avatars/002-psyduck.png";
   }
-
+  //render avatar when one isnt provided
   return (
     <div className={"outputText"}>
       <img src={avatar} alt="avatar" />

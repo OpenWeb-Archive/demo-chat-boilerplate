@@ -47,7 +47,7 @@ class ChatInput extends Component {
       }
     }
   };
-
+  //input validations to prevent blank messages from being sent
   render() {
     return (
       <div className={"formPad"}>

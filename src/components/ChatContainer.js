@@ -3,14 +3,15 @@ import Messages from "./Messages";
 import ChatInput from "./chatInput";
 
 class ChatContainer extends Component {
+  // ables to render newer messages without user having to scroll down in the chatWindow
   componentDidUpdate() {
     let chatWindow = this.refs.chatWindow;
     chatWindow.scrollTop = chatWindow.scrollHeight;
   }
 
-  typing = () => {
-    console.log("this user is typing");
-  };
+  // typing = () => {
+  //   console.log("this user is typing");
+  // };
 
   render() {
     const { sendMessage, messages, username, avatar } = this.props;

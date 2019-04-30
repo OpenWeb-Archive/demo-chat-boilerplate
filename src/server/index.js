@@ -1,6 +1,8 @@
 // let http = require('http')
 // let app = http.createServer()
 
+//STRETCH GOALS, BUILDING OUT A CUSTOM SERVER TO DIVE DEEPER INTO SOCKET.IO, TO BUILD MULITPLE INSTANCES OF CHATROOMS
+
 let app = require("http").createServer();
 let io = (module.exports.io = require("socket.io")(app));
 
