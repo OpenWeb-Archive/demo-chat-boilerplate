@@ -4,7 +4,7 @@ body {
 
   .spotim-header {
     text-align: center;
-    background-color: #0082DD;
+    background-color: #0082dd;
     height: 150px;
     padding: 20px;
     color: white;
@@ -12,10 +12,65 @@ body {
       font-size: 1.5em;
     }
   }
+
+  .chat-window {
+    // top: 30px;
+    max-height: 450px;
+    min-height: 450px;
+    overflow: auto;
+    background: #f9f9f9;
+    // flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .outputText {
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 3px solid #e9e9e9;
+    color: #555;
+  }
+
+  .outputText img {
+    display: block;
+    width: 30px;
+    height: auto;
+  }
+
+  .outputName {
+    color: red;
+    font-size: 20px;
+  }
+
+  .outputName2 {
+    color: black;
+    font-size: 20px;
+  }
+
+  .messagepad {
+    padding-left: 10px;
+  }
+
+  .typing {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 300px;
+  }
+
+  .gavin {
+    padding-top: 15px;
+  }
+
+  .inputWindow {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 100;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Ariel;
+    font-size: 20px;
+  }
 }
-
-
-
-
-
-
