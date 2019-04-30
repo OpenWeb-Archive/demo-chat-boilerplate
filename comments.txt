@@ -6,14 +6,17 @@ Chat window replaces the input component, a user can send messages. Each message
 
  In the user's window, the usernames will be marked a different color depending on the sender. A message sent by the user is marked in blue, while other messages not sent by the user will be marked in green.
 
-
+Some future goals are:
+- Rendering "Who's typing feature" in the chat window
+- Authentication
+- Ability to create, join, text in multiple chat rooms
 
 
 Feedback regarding this exam is always welcomed.
 What did you like? What didn't you like? What was missing?
 
 I genuinely enjoyed this code challenge,  I found it to be fair in terms of difficulty level and extremely practical way to gauge one’s technical ability. It provided enough freedom to choose the framework of choice and tackle the specs as one sees fit.
-I haven’t used web sockets before so there was a small learning curve, but it made me more excited to learn this new technology. 
+I haven’t used web sockets before so there was a small learning curve, but it made me more excited to learn this new technology.
 
 I opted to use the boilerplate repo provided, though slightly outdated but that wasn’t a huge problem.
 
