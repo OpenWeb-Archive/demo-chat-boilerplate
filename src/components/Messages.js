@@ -11,7 +11,7 @@ const Messages = props => {
   return (
     <div className={"outputText"}>
       <img src={props.message.avatar} />
-      <b style={{ color }}>{props.message.user}</b>:
+      <b style={{ color }}>{props.message.user}</b> {props.message.time}: <br />
       <span className="messagepad">{props.message.text}</span>
     </div>
   );

@@ -41,7 +41,7 @@ class App extends React.PureComponent {
   };
 
   sendMessage = message => {
-    if (this.state.username && message) {
+    if (this.state.username && message.text) {
       this.props.socket.emit("spotim/chat", message);
     }
   };
